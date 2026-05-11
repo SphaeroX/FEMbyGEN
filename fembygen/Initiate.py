@@ -4,7 +4,7 @@ import os
 from fembygen import Common
 
 MAX_NUM_PARAMETER = 10    # maximum number of parameters
-LOCATION = os.path.normpath('Mod/FEMbyGEN/fembygen')
+LOCATION = os.path.normpath(os.path.join("Mod", "FEMbyGEN", "fembygen"))
 
 class InitiateCommand():
     """Create parameter spreadsheet"""
