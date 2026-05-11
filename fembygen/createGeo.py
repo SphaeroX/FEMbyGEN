@@ -51,7 +51,7 @@ class CreateGeoCommand:
         self.createGeoPanel = None
     def GetResources(self):
         return {
-            'Pixmap': os.path.join(FreeCAD.getHomePath(), 'Mod/FEMbyGEN/fembygen/icons/createGeo.svg'),
+            'Pixmap': os.path.join(FreeCAD.getHomePath(), "Mod","FEMbyGEN","fembygen","icons","createGeo.svg"),
             'Accel': "Shift+S",
             'MenuText': "Create Geo Generations",
             'ToolTip': "Perform createGeo operations on selected objects"
