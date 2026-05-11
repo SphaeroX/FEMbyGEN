@@ -37,8 +37,8 @@ class InitiatePanel:
     def spreadsheetTemplate(self, sheet):
         """Spreadsheet editing"""
         pal = FreeCADGui.getMainWindow().palette()    # get colors from theme color palette
-        backColor = pal.background().color().getRgbF()
-        textColor = pal.text().color().getRgbF()
+        backcolor = pal.color(QtGui.QPalette.Window).getRgbF()
+        textColor = pal.color(QtGui.QPalette.Text).getRgbF()
         for i in range(MAX_NUM_PARAMETER):
             sheet.set(f'A{i+2}', f'{i+1}')    # parameter number
 
