@@ -10,7 +10,7 @@ import multiprocessing.dummy as mp
 from multiprocessing import cpu_count
 from functools import partial
 
-LOCATION = os.path.normpath('Mod/FEMbyGEN/fembygen')
+LOCATION = os.path.normpath(os.path.join("Mod", "FEMbyGEN", "fembygen"))
 
 class Generate:
     """Part generations"""
